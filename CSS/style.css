@@ -19,7 +19,7 @@ body {background-color: #f8f8f8;}
 nav{
 /* border: solid 1px red; */
     width: 100%;
-    height: 100px;
+    height: 6.8rem;
     background-color: #eaf55a;
     }
 
@@ -49,13 +49,43 @@ nav button { background-color: rgb(150, 150, 207); color: aliceblue; padding: 0.
                 &:hover {background-color: #030f7a; transition: 0.5s; scale: 1.1; cursor: pointer;}
         }
 
-nav ul {display: flex; justify-content: end; gap: 1rem; margin-right: 1rem; margin-top: 0;}
+nav ul {display: flex; justify-content: end; gap: 0.2rem; margin-right: 1rem; margin-top: 0;}
 
-nav a { text-decoration: none; font-size: 0.8rem; color: #0217d3; letter-spacing:0.09rem;
+
+nav li {display: inline-block; justify-content: end;}
+
+nav li a {display: inline-block;
+           color:#260247; 
+           text-decoration: none;
+           padding: 0.4rem;            
+}
+
+nav li a:hover {background-color:#c2cc35; box-shadow: 0 0 2px black; border: solid 1px}
+
+.dropdown-menu {position: absolute; 
+                box-shadow: 0 0 2px black; 
+                display: none; 
+                /* width: 30rem;  */
+                /* margin: 1rem; */
+                /* padding: 0.5rem; */
+                border-radius: 4px;
+                /* padding: 15px;
+                position: absolute; */
+        }
+
+.dropdown-menu a {display: block; color: black;}
+
+.dropdown:hover .dropdown-menu{ display: block; background-color: #eaf55a;}
+/* .dropdown:hover .dropdown-menu a{ display: block;} */
+
+/* nav a { text-decoration: none; font-size: 0.8rem; color: #0217d3; letter-spacing:0.09rem;
         &:hover{ color:#260247; transition: 0.5s; cursor: pointer;}}
-nav li {list-style-type: none;}
+nav li {list-style-type: none;} */
 
-.nav-lista-menu-2 {padding-bottom: 1rem;}
+/* .nav-lista-menu-2 {padding-bottom: 1rem;} */
+
+
+
 
 header {width: 100%;
         height: 19rem;
@@ -271,19 +301,3 @@ footer h2 {margin-top: 2rem; color:#030f7a}
 
 nav ul li {position: relative;}
 
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 180px;}
-
-    nav ul li .dropdown li a {
-    padding: 10px;}
-
-    nav ul li:hover .dropdown {
-    display: block;}
