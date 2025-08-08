@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuário em HTML e CSS</title>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./CSS/style111.css"> 
+
+</head>
+
+<body>
+
+    <form>
+        
+        <h2>Ficha de Incrição</h2>
+
+        <div class="dados">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" placeholder="Informe seu nome">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="exemplo@dominio.com">
+            
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" placeholder="(00) 00000-0000">
+
+        </div>
+     
+        <div class="genero">
+            <h4>Gênero</h4>
+            
+            <input type="radio" id="feminino" checked name="genero">
+            <label for="feminino">Feminino</label>
+            
+            <input type="radio" id="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+            
+            <input type="radio" id="outros" name="genero">
+            <label for="outros">Outros</label>
+        </div>
+       
+        <div class="interesse">
+            <h4>Áreas de interesse:</h4>
+        
+            <input type="checkbox" id="front">
+            <label for="front">Font-end</label>
+            
+            <input type="checkbox" id="back">
+            <label for="back">Back-end</label>
+                        
+            <input type="checkbox" id="design">
+            <label for="design">Design</label>
+
+        </div>
+
+        <div class="escolaridade">
+            <label>Escolaridade</label>
+            <select id="escolaridade">
+                <option value="" selected disabled></option>
+                <option value="efi">Ensino fundamental incompleto</option>
+                <option value="efc">Ensino fundamental completo</option>
+                <option value="emi">Ensino médio incompleto</option>
+                <option value="emc">Ensino médio completo</option>
+                <option value="esi">Ensiono superior incompleto</option>
+                <option value="esc">Ensino superior completo</option>
+            </select>
+        </div>
+ 
+        <div class="comentario">
+            <label for="comentario">Comentário Adicional:</label>
+            <textarea id="comentário">Outras Informações</textarea>
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>

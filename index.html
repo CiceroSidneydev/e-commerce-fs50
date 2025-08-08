@@ -7,16 +7,244 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <nav>Nav</nav>
-    <header>Header</header>
+
+    <nav>
+
+        <div class="nav-1">
+            <div class="nav-logo">
+                <img src="./Img/logo-sem-fundo.png" alt="">
+            </div>
+
+            <div class="nav-bloco-2 search-icon">
+                <div>
+                    <input type="search" placeholder="Pesquisar &#128269">
+                </div>
+            
+                <div class="nav-cart">
+                    <img id="id_compras" src="./Img/carrinho-de-compras.png" alt="">
+                </div>
+
+                <div>
+                    <button>Entrar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="av-lista-menu-2">
+
+            <ul class="dropdown">
+                <li><a href="">Celulares</a></li>
+                <li><a href="">Vestuário</a></li>
+                <li><a href="">Eletrodomésticos</a></li>
+                <li><a href="">Móveis</a></li>
+                <li><a href="">Computadores</a></li>
+                <li><a href="">Infantil</a></li>
+            </ul>
+            
+           
+            
+            
+            
+            
+            
+
+        </div>
+
+        
+    </nav>
+
+    <header>
+       <a href="">
+        <img src="./Img/img-destaque-header.avif" alt="Celulares"> 
+       </a>
+
+
+    </header>
+
     <main>
-        <section>Destaqques</section>
+        <section class="destaques">
+           
+           <h1>Ofertas em destaque para você</h1>
 
-        <section>FORMA DE PAGAMENTO</section>
+           <div>
+            <article class="card-produto">
+                <img src="./Img/destaque1-celular.jpg" alt="">
+                <h2>Celulares</h2>
+                <p class="descricao">Celulares de última geração. Aproveite agora os descontos do mês dos Pais. </p>
+                <p class="preco">R$ 999,99</p>
+                <button>Comprar</button>
+            </article>
 
-        <SEction>NEWSLATER</SEction>
+            <article class="card-produto">
+                <img src="./Img/destaque2-maquina.avif" alt="">
+                <h2>Lavadoras</h2>
+                <p class="descricao">Celulares de última geração. Aproveite agora os descontos do mês dos Pais. </p>
+                <p class="preco">R$ 999,99</p>
+                <button>Comprar</button>
+            </article>
 
-        <FOOter>FOOTER</FOOter>
+            <article class="card-produto">
+                <img src="./Img/destaque3-computador.avif" alt="">
+                <h2>Computadores</h2>
+                <p class="descricao">Celulares de última geração. Aproveite agora os descontos do mês dos Pais. </p>
+                <p class="preco">R$ 999,99</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="card-produto">
+                <img src="./Img/destaque3-cerveja.avif" alt="">
+                <h2>Cervejas</h2>
+                <p class="descricao">Celulares de última geração. Aproveite agora os descontos do mês dos Pais. </p>
+                <p class="preco">R$ 999,99</p>
+                <button>Comprar</button>
+            </article>
+
+           </div>
+        
+        </section>
+
+        <section class="forma-pgto">
+            
+           <h1>Condições Especiais</h1>
+
+           <div class="forma-pgto-div">
+            <article class="card-cond-especiais">
+                <img src="./Img/formas-pgto.avif" alt="">
+                <h2>Formas de Pagamento</h2>
+                <ul>
+                    <li>Cartão de Crédito</li>
+                    <li>Débito</li>
+                    <li>Pix</li>
+                    <li>Boleto</li>
+                </ul>
+                
+                <div class="formas-pgto-div formas-pgto-icone">
+                    <img src="./Img/visa.png" alt="">
+                    <img src="./Img/master.png" alt="">
+                    <img src="./Img/pix.png" alt="">
+                    <img src="./Img/boleto-simbolo.png" alt="">
+                </div>
+                <!-- <button>Comprar</button> -->
+            </article>
+
+            <article class="card-cond-especiais">
+                <img src="./Img/frete.avif" alt="">
+                <h2>Frete grátis a partir de R$ 500,00</h2>
+                <p class="descricao">Compras acima de R$ 500,00 ganhe frete grátis para todo território nacional. </p>
+                <input type="search" placeholder="Consultar CEP">
+                <!-- <button>Comprar</button> -->
+            </article>
+
+            <article class="card-cond-especiais">
+                <img src="./Img/garantia.jpg" alt="">
+                <h2>Segurança, do início ao fim</h2>
+                <p class="descricao">Não gostou do que comprou? Devolva! Aqui não há nada que você não possa fazer, porque você está sempre protegido.</p>
+                <a href="">Saiba Mais</a>
+                <!-- <button>Comprar</button> -->
+            </article>
+
+          </div>        
+        
+        </section>
+
+        <Section class="noticias">
+
+            <h1>Assine nossa Newlaster</h1>
+
+            <form action="./enviar dados" method="post" >
+
+
+                <div>
+                    <label for="nome">Nome Completo:</label> <br>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui"><br><br>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label> <br>
+                     <input type="text" id="email" name="email" required placeholder="exemplo@email.com">
+                </div>
+  
+                <div>
+                 <button type="submit">Enviar</button>
+                </div>
+
+
+            </form>
+            
+    
+    
+    </Section>
+
+        <footer class="footer-div">
+       
+
+            <div>
+
+                <h2>Conheça-nos</h2>
+                <ul>
+                    <li><a href="">Comunidade</a></li>
+                    <li><a href="">Sobre o E-commerce</a></li>
+                    <li><a href="">Informações corporativas</a></li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="">Acessebilidade</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Ganhe dinheiro conosco</h2>
+                <ul>
+                    <li><a href="">Venda conosco</a></li>
+                    <li><a href="">Anuncie seus produtos</a></li>
+                    <li><a href="">Seja nosso parceiro</a></li>
+                  
+                </ul>
+            </div>
+
+            <div>
+
+                <h2>Pagamento</h2>
+                <ul>
+                    <li><a href="">Meios de pagamento</a></li>
+                    <li><a href="">Compre com pontos</a></li>
+                    <li><a href="">Cartão de crédito</a></li>
+                    <li><a href="">Vale presente</a></li>
+                    <li><a href="">Lista de casamento</a></li>
+                </ul>
+            </div>
+
+            <div>
+
+                <h2>Deixe-nos audar você</h2>
+                <ul>
+                    <li><a href="">Sua conta</a></li>
+                    <li><a href="">Frete e prazo de entrega</a></li>
+                    <li><a href="">Devolução e reembolso></li>
+                    <li><a href="">Ajuda</a></li>
+
+                </ul>
+            </div>
+
+        </footer>
+
+        <footer class="footer-2">
+
+            <div class="lista-redape">
+                <a class="retirar-border" href="" class="retirar-border">Condições de uso</a>
+                <a href="">Notificação de privacidade</a>
+                <a href="">Cookies</a>
+                <a href="" class="sem-border">Anúncios baseados em interesse</a>
+            </div>
+            
+            <div class="lista-redape">
+                <p> &copy; 2025 Ecommerce.com</p>
+            </div>
+
+
+
+        </footer>
+
+
     </main>
 </body>
 </html>

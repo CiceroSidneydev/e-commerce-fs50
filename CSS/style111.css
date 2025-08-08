@@ -1,0 +1,60 @@
+/* fonte montserrat do google forms https://fonts.google.com/selection/embed */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* agora dier que quero usar */
+html{font-family: "Montserrat", sans-serif;}
+
+/* CORPO DA PAGINA */
+body{background-color:#F0F2F5} 
+
+form{
+     background-color: #f9f9f9; /* cor do fundo do fome*/
+     width: 80%; /* reducao do tamaho do fomr*/
+     margin: auto; /* centralizando o form na pagina*/
+     padding: 32px; /* espaçamento interno do elemento */
+    border-radius: 12px; /* borda arredondada*/
+    box-shadow: 0 0 12px 2px #b0b0b0
+    }
+
+/* label{
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;  
+} */
+
+h2{text-align: center;}
+/* 
+input{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 16px;
+    margin-bottom: 16px;
+    width: 100%;  
+    } */
+
+.dados{ 
+        label{
+                font-weight: 700;
+                display: block;
+                margin-bottom: 4px;}
+        input{
+            font-family: "Montserrat", sans-serif; 
+            font-size: 16px;
+            margin-bottom: 16px;
+            width: 100%;  
+            }
+    }   
+
+.genero{
+        label{
+              font-weight: 700;
+              display: block;
+              margin-bottom: 4px;}
+        input{
+            font-family: "Montserrat", sans-serif; 
+            font-size: 16px;
+            margin-bottom: 16px;
+            width: 100%;  
+            }
+
+
+}
